@@ -1,0 +1,46 @@
+//GRADIENT
+$background-gradient : linear-gradient(90deg, rgba(74,69,6,1) 0%, rgba(138,119,23,1) 21%, rgba(84,73,49,1) 77%);
+.divider{
+    background: $background-gradient;
+    display: block;
+    height: 0.6vh;
+}
+
+.general__purpose__button{
+    margin-top: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 500;
+    font-size: large;
+    background-color: rgba(black, 0.5);
+    color: whitesmoke;
+    transition: all 0.5s;
+    border-radius: 15px;
+    
+    &:hover{
+        border-radius: 30px;
+        color: black;
+        background-color: rgba(white,0.3);
+        cursor: pointer;
+        transform: scale(1.05) translateY(-1rem);
+    }
+}
+.anchor__holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.general__purpose__anchor{
+    color: rgb(218, 184, 184);
+    font-family: 'Berkshire Swash', cursive;
+    margin: 1rem;
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+    font-size: medium;
+    margin-bottom: 2rem;
+    &:hover{
+        cursor: pointer;
+        color: rgb(170, 170, 206);
+    }
+}

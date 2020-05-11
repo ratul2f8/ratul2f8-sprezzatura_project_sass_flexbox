@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script:400,500|Satisfy&display=swap');
+@import "./sections/header";
+@import "./sections/contest";
+@import "./sections/winter";
+@import "./sections/shopping";
+@import "./sections/footer";
+
+@import "./utilities/mixin";
+@import "./utilities/common";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  //scroll-behavior: smooth; 
+}
+
+body {
+  box-sizing: border-box; 
+}

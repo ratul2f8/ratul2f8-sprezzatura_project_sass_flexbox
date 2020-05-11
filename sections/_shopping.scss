@@ -1,0 +1,152 @@
+.shopping{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12%;
+        padding-left: 8%;
+        flex-direction: column;
+        width: 50%;
+        &__heading-1{
+            font-family: 'Berkshire Swash', cursive;
+            font-size: 12vh;
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            text-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+        }
+        &__heading-2{
+            margin-top: 4vh;
+            font-family:  'Satisfy', cursive;
+            font-size: 6vh;
+            width: 100%;
+            text-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+        }
+    }
+    .checkout-holder{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin-top: 5vh;
+       
+       
+        .checkout{
+            font-family:  'Dancing Script', cursive;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            font-size: 4vh;
+            padding: 3%;
+            
+            box-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+            transition: all 0.3s;
+
+            &:hover{
+                transform: translateX(1rem);
+            }         
+        }
+    }
+
+    &__image{
+        width: 50%;
+        height: auto;
+        padding: 12vh 1vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        &__1{
+            height: 80vh;
+            width: 23vw;
+            background-color: black;
+            box-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+            background: url('./img/summer-3.jpg') top/cover;
+            z-index: 3;
+            transform: perspective(30vw) rotateY(-25deg);
+        }
+        &__2{
+            height: 80vh;
+            width: 23vw;
+            background-color: black;
+            box-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+            background: url('./img/summer-2.jpg') top/cover;
+            z-index: 2;
+            transform: translateX(-20%) perspective(30vw) rotateY(-25deg);
+        }
+        &__3{
+            height: 80vh;
+            width: 23vw;
+            z-index: 1;
+            background-color: black;
+            box-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+            background: url('./img/summer-1.jpg') top/cover;
+            transform: translateX(-40%) perspective(30vw) rotateY(-25deg);
+
+        }
+        &__4{
+            height: 80vh;
+            width: 23vw;
+            z-index: 0;
+            background-color: black;
+            box-shadow: 0 1.5rem 2rem rgba(black, 0.15);
+            background: url('./img/summer-4.jpg') top/cover;
+            transform: translateX(-60%) perspective(30vw) rotateY(-25deg);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .shopping{
+        flex-direction: column-reverse;
+        padding-bottom: auto;
+        &__text{
+            width: 100%;
+            padding-top: 1vh;
+            &__heading-1{
+                width: 100%;
+                font-size: 6vh;
+                align-items: center;
+                justify-content: center;
+            }
+            &__heading-2{
+                display: flex;
+                width: 100%;
+                font-size: 3vh;
+                align-items: center;
+                justify-content: center;
+            }
+            .checkout-holder{
+                align-items: center;
+                justify-content: center;
+                
+                .checkout{
+                    font-size: 2vh;
+                }
+            }
+        }
+        &__image{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 10vh 4vw;
+            &__1{
+                height: 60vh;
+                transform: perspective(20vw) rotateY(-15deg);
+            }
+            &__2{
+                height: 60vh;
+                transform: translateX(-10%) perspective(20vw) rotateY(-15deg);
+            }
+            &__3{
+                height: 60vh;
+                transform: translateX(-15%) perspective(20vw) rotateY(-15deg);
+            }
+            &__4{
+                height: 60vh;
+                transform: translateX(-20%) perspective(20vw) rotateY(-15deg);
+            }
+        }
+    }
+}

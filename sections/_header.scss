@@ -1,0 +1,281 @@
+@import "../utilities/mixin";
+.header{
+    background: linear-gradient(to right bottom, rgba(82, 80, 80,0.7),
+    rgba(0,0,0,0.7)),
+    url('./img/header-main.jpg') top/cover fixed no-repeat;
+    height: auto;
+    display: block;
+    &__banner{
+        display: flex;
+        background: rgba(0,0,0,0.3);
+        height: 20vh;
+        flex-direction: row-reverse;
+    }
+    
+    &__primary__textbox{
+       height: 100%;
+       color: white;
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       padding-left: 2rem;
+       padding-right: 2rem;
+       border-left: 1px solid whitesmoke;
+    }
+    &__primary__text{
+        font-family: 'Berkshire Swash', cursive;
+        //text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-weight: 500;
+        font-size: 6.5vh;
+        
+    }
+    &__secondary__textbox{
+       height: 100%;
+       color: white;
+       text-align: center;
+       justify-content: center;
+       display: inline-flex;
+       align-items: center;
+       padding-right: 2rem;
+    }
+    &__secondary__text{
+        font-family: 'Satisfy', cursive;
+        //text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-weight: 200;
+        font-size: 4.5vh;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+
+        &__cards{
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__account{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.card{
+    padding: 3rem;
+    width: 100%;
+    
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        height: 350px;
+        background: rgba(white,0.3);
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0 1.5rem 3rem rgba( black, 0.4);
+        overflow: hidden;
+        transition: all 0.3s;
+
+        &:hover{
+            background: rgba(white,0.45);
+            transform: scale(1.06);
+        }
+    }
+    &__image-section{
+        height: 45%;
+    }
+    &__heading-section{
+        height: 15%;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: large;
+    }
+    &__details-section{
+       height: 45%;
+       font-family: 'Berkshire Swash', cursive;
+       font-weight: 400;
+    }
+
+    &__judge{
+        position: relative;
+        
+        .image-1{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            position: absolute;
+            background: url('./img/header-1.jpeg') top/cover;
+            top: 50%;
+            left: 50%;
+            transform: translate(-129%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+        }
+        .image-2{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            background: url('./img/header-4.jpg') top/cover;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+            z-index: 1;
+        }
+        .image-number{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(35%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+            background: rgba( black, 0.6);
+            text-align: center;
+
+            p{
+                transform: translateY(3.5rem);
+                color: whitesmoke;
+                font-family: 'Berkshire Swash', cursive;
+                font-size: large; 
+                transition: all 0.3s;
+            }
+        }
+    }
+    &__audience{
+        position: relative;
+        .image-1{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            position: absolute;
+            background: url('./img/header-2.jpg') top/cover;
+            top: 50%;
+            left: 50%;
+            transform: translate(-129%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+        }
+        .image-2{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            background: url('./img/header-3.jpg') top/cover;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+            z-index: 1;
+        }
+        .image-number{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(35%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+            background: rgba( black, 0.6);
+            text-align: center;
+
+            p{
+                transform: translateY(3.5rem);
+                color: whitesmoke;
+                font-family: 'Berkshire Swash', cursive;
+                font-size: large; 
+            }
+        }
+    }
+    &__influencers{
+        position: relative;
+        .image-1{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            position: absolute;
+            background: url('./img/header-6.jpg') top/cover;
+            top: 50%;
+            left: 50%;
+            transform: translate(-129%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+        }
+        .image-2{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            background: url('./img/header-5.jpg') top/cover;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+            z-index: 1;
+        }
+        .image-number{
+            height: 9rem;
+            width: 9rem;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(35%,-50%);
+            box-shadow: 0 1.5rem 3rem rgba( black, 0.3);
+            background: rgba( black, 0.6);
+            text-align: center;
+
+            p{
+                transform: translateY(3.5rem);
+                color: whitesmoke;
+                font-family: 'Berkshire Swash', cursive;
+                font-size: large; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+  .header__content__cards{
+    display: flex;
+    flex-direction: column;
+}   
+}
+@media only screen and (max-width: 768px){
+    .header{
+        &__secondary__text{
+            font-size: 3.5vh;
+        }
+  }   
+}
+@media only screen and (max-width: 500px){
+    .header{
+        &__banner{
+        flex-direction: column;
+        height: 20vh;
+       }
+        &__primary__text{
+            font-size: 4.5vh;
+        }
+        &__secondary__text{
+            font-size: 2.5vh;
+        }
+        &__primary__textbox{
+            border-left: none;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+.button__holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+

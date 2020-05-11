@@ -1,0 +1,296 @@
+.winter{
+    display: block;
+    position: relative;
+
+    &__bg{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        &__1{
+            width: 20%;
+            height: 100vh;
+            opacity: 0.8;
+            background:url('./img/winter-bg-1.jpg') top/cover no-repeat;
+            
+        }
+        &__2{
+            width: 20%;
+            height: 100vh;
+            opacity: 0.8;
+            background: url('./img/winter-bg-2.jpg') top/cover no-repeat;
+            
+        }
+        &__3{
+            width: 20%;
+            height: 100vh;
+            opacity: 0.8;
+            background: url('./img/winter-bg-3.jpg') top/cover no-repeat;
+        }
+        &__4{
+            width: 20%;
+            height: 100vh;
+            opacity: 0.8;
+            background: url('./img/winter-bg-4.jpg') top/cover no-repeat;
+            
+        }
+        &__5{
+            width: 20%;
+            height: 100vh;
+            opacity: 0.8;
+            background: url('./img/winter-bg-5.jpg') top/cover no-repeat;
+            
+        }
+
+    }
+}
+.winter__content{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+   left: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+    &__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        background-color: rgba( black, 0.3);
+        color: whitesmoke;
+    }
+    &__winner{
+        width: 100%;
+        display: flex;
+        height: 85%;
+        padding: 3vh;
+        flex-direction: column;
+
+        .winter__winner{
+            width: 50vw;
+            height: 33.33%;
+            margin: 2vh 23vw;
+            background-color: rgba(black,0.5);
+            display: flex;
+            flex-direction: row;
+
+            &__1{
+                .winner-1-image-holder{
+                   height: 100%;
+                   width: 33.33%;
+                   border-right: 2px solid rgba(white,0.15);
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   .winner-1-image{
+                    height: 20vh;
+                    width: 20vh;
+                       background: url('./img/winner-1.jpg') top/cover;
+                       border-radius: 50%;
+                   }
+                   
+                }
+                .winner-1-name{
+                    border-right: 2px solid rgba(white,0.15);
+                   height: 100%;
+                   width: 33.33%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+                .winner-1-star{
+                   height: 100%;
+                   width: 33.33%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+                .winner-1-name{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    color: wheat;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5vh;
+                }
+                .winner-1-star{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    color: wheat;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5vh;
+                }
+            }
+            &__2{
+                .winner-2-image-holder{
+                   height: 100%;
+                   width: 33.33%;
+                   border-right: 2px solid rgba(white,0.15);
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   .winner-2-image{
+                       height: 20vh;
+                       width: 20vh;
+                       background: url('./img/winner-2.jpg') top/cover;
+                       border-radius: 50%;
+                   }
+                   
+                }
+                .winner-2-name{
+                    border-right: 2px solid rgba(white,0.15);
+                   height: 100%;
+                   width: 33.33%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+                .winner-2-star{
+                   height: 100%;
+                   width: 33.33%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+                .winner-2-name{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    color: wheat;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5vh;
+                }
+                .winner-2-star{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    color: wheat;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5vh;
+                }
+            }
+            &__3{
+                .winner-3-image-holder{
+                   height: 100%;
+                   width: 33.33%;
+                   border-right: 2px solid rgba(white,0.15);
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   .winner-3-image{
+                       height: 20vh;
+                       width: 20vh;
+                       background: url('./img/winner-3.jpg') top/cover;
+                       border-radius: 50%;
+                   }
+                   
+                }
+                .winner-3-name{
+                    border-right: 2px solid rgba(white,0.15);
+                   height: 100%;
+                   width: 33.33%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+                .winner-3-star{
+                   height: 100%;
+                   width: 33.33%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+                .winner-3-name{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    color: wheat;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5vh;
+                }
+                .winner-3-star{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    color: wheat;
+                    font-family: 'Satisfy', cursive;
+                    font-size: 5vh;
+                }
+            }
+        }
+
+    }
+}
+.winter-heading{
+    font-size: 5vh;
+    font-family: 'Satisfy', cursive;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px){
+    .winter-heading{
+        font-size: 3vh;
+    }
+    .winter__content__winner{
+        padding: 2vh 2vw;
+        .winter__winner{
+            height: 25%;
+            &__1{
+                width: 60vw;
+                .winner-1-name{
+                    font-size: 2vh;
+                }
+                .winner-1-star{
+                    font-size: 2vh;
+                }
+                .winner-1-image-holder{
+                    .winner-1-image{
+                        height: 10vh;
+                        width: 10vh;
+                    }
+                }
+            }
+            &__2{
+                width: 60vw;
+                .winner-2-name{
+                    font-size: 2vh;
+                }
+                .winner-2-star{
+                    font-size: 2vh;
+                }
+                .winner-2-image-holder{
+                    .winner-2-image{
+                        height: 10vh;
+                        width: 10vh;
+                    }
+                }
+            }
+            &__3{
+                width: 60vw;
+                .winner-3-name{
+                    font-size: 2vh;
+                }
+                .winner-3-star{
+                    font-size: 2vh;
+                }
+                .winner-3-image-holder{
+                    .winner-3-image{
+                        height: 10vh;
+                        width: 10vh;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+

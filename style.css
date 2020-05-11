@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Dancing+Script:400,500|Satisfy&display=swap");
+.header {
+  background: linear-gradient(to right bottom, rgba(82, 80, 80, 0.7), rgba(0, 0, 0, 0.7)), url("./img/header-main.jpg") top/cover fixed no-repeat;
+  height: auto;
+  display: block; }
+  .header__banner {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    height: 20vh;
+    flex-direction: row-reverse; }
+  .header__primary__textbox {
+    height: 100%;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-left: 1px solid whitesmoke; }
+  .header__primary__text {
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    font-size: 6.5vh; }
+  .header__secondary__textbox {
+    height: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 2rem; }
+  .header__secondary__text {
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 200;
+    font-size: 4.5vh; }
+  .header__content {
+    display: flex;
+    flex-direction: column; }
+    .header__content__cards {
+      display: flex;
+      flex-direction: row; }
+    .header__content__account {
+      display: flex;
+      flex-direction: column; }
+
+.card {
+  padding: 3rem;
+  width: 100%; }
+  .card__container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: all 0.3s; }
+    .card__container:hover {
+      background: rgba(255, 255, 255, 0.45);
+      transform: scale(1.06); }
+  .card__image-section {
+    height: 45%; }
+  .card__heading-section {
+    height: 15%;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: large; }
+  .card__details-section {
+    height: 45%;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 400; }
+  .card__judge {
+    position: relative; }
+    .card__judge .image-1 {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      position: absolute;
+      background: url("./img/header-1.jpeg") top/cover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-129%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+    .card__judge .image-2 {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      background: url("./img/header-4.jpg") top/cover;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+      z-index: 1; }
+    .card__judge .image-number {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(35%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center; }
+      .card__judge .image-number p {
+        transform: translateY(3.5rem);
+        color: whitesmoke;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: large;
+        transition: all 0.3s; }
+  .card__audience {
+    position: relative; }
+    .card__audience .image-1 {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      position: absolute;
+      background: url("./img/header-2.jpg") top/cover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-129%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+    .card__audience .image-2 {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      background: url("./img/header-3.jpg") top/cover;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+      z-index: 1; }
+    .card__audience .image-number {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(35%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center; }
+      .card__audience .image-number p {
+        transform: translateY(3.5rem);
+        color: whitesmoke;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: large; }
+  .card__influencers {
+    position: relative; }
+    .card__influencers .image-1 {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      position: absolute;
+      background: url("./img/header-6.jpg") top/cover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-129%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+    .card__influencers .image-2 {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      background: url("./img/header-5.jpg") top/cover;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+      z-index: 1; }
+    .card__influencers .image-number {
+      height: 9rem;
+      width: 9rem;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(35%, -50%);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center; }
+      .card__influencers .image-number p {
+        transform: translateY(3.5rem);
+        color: whitesmoke;
+        font-family: 'Berkshire Swash', cursive;
+        font-size: large; }
+
+@media only screen and (max-width: 900px) {
+  .header__content__cards {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 768px) {
+  .header__secondary__text {
+    font-size: 3.5vh; } }
+
+@media only screen and (max-width: 500px) {
+  .header__banner {
+    flex-direction: column;
+    height: 20vh; }
+  .header__primary__text {
+    font-size: 4.5vh; }
+  .header__secondary__text {
+    font-size: 2.5vh; }
+  .header__primary__textbox {
+    border-left: none;
+    border-bottom: 1px solid white; } }
+
+.button__holder {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contest {
+  display: block;
+  height: auto;
+  background-color: rgba(183, 187, 177, 0.507);
+  padding-top: 18vh;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 35vw;
+  position: relative; }
+  .contest__holder {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    border: black;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15); }
+  .contest__image-1 {
+    width: 33.33%;
+    height: 100%;
+    background: url("./img/contest-1.jpg") top/cover no-repeat; }
+  .contest__image-2 {
+    width: 33.33%;
+    height: 100%;
+    background: url("./img/contest-2.jpg") center/cover no-repeat; }
+  .contest__image-3 {
+    width: 33.33%;
+    height: 100%;
+    background: url("./img/contest-3.jpg") top/cover no-repeat; }
+  .contest__text {
+    position: absolute;
+    top: 40%;
+    right: 7%; }
+    .contest__text__heading {
+      font-family: 'Berkshire Swash', cursive;
+      font-size: 3.5vw; }
+      .contest__text__heading__holder {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 2rem;
+        width: 43vw; }
+    .contest__text__buttons__holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-top: 1.2rem; }
+      .contest__text__buttons__holder .button__holder {
+        margin-left: 1rem; }
+      .contest__text__buttons__holder .general__purpose__button {
+        font-size: 1.5vw; }
+
+@media only screen and (max-width: 1024px) {
+  .contest {
+    font-size: 2.5vw;
+    padding: 2vh 12vw; }
+    .contest__holder {
+      height: 90vh; } }
+
+@media only screen and (max-width: 796px) {
+  .contest__text__heading {
+    font-size: 2.5vw; }
+    .contest__text__heading__holder {
+      width: auto; } }
+
+@media only screen and (max-width: 768px) {
+  .contest {
+    padding: 0; }
+    .contest__holder {
+      height: 60vh; }
+    .contest__image-1 {
+      opacity: 0.75; }
+    .contest__image-2 {
+      opacity: 0.75; }
+    .contest__image-3 {
+      opacity: 0.75; }
+    .contest__text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-55%, -50%); }
+      .contest__text__heading {
+        font-size: 3.5vw; }
+        .contest__text__heading__holder {
+          background-color: whitesmoke;
+          width: 45vw; } }
+
+@media only screen and (max-width: 360px) {
+  .contest__text__heading {
+    font-size: 2.5vw; }
+    .contest__text__heading__holder {
+      width: auto; } }
+
+.winter {
+  display: block;
+  position: relative; }
+  .winter__bg {
+    display: flex;
+    flex-direction: row;
+    height: auto; }
+    .winter__bg__1 {
+      width: 20%;
+      height: 100vh;
+      opacity: 0.8;
+      background: url("./img/winter-bg-1.jpg") top/cover no-repeat; }
+    .winter__bg__2 {
+      width: 20%;
+      height: 100vh;
+      opacity: 0.8;
+      background: url("./img/winter-bg-2.jpg") top/cover no-repeat; }
+    .winter__bg__3 {
+      width: 20%;
+      height: 100vh;
+      opacity: 0.8;
+      background: url("./img/winter-bg-3.jpg") top/cover no-repeat; }
+    .winter__bg__4 {
+      width: 20%;
+      height: 100vh;
+      opacity: 0.8;
+      background: url("./img/winter-bg-4.jpg") top/cover no-repeat; }
+    .winter__bg__5 {
+      width: 20%;
+      height: 100vh;
+      opacity: 0.8;
+      background: url("./img/winter-bg-5.jpg") top/cover no-repeat; }
+
+.winter__content {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .winter__content__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: whitesmoke; }
+  .winter__content__winner {
+    width: 100%;
+    display: flex;
+    height: 85%;
+    padding: 3vh;
+    flex-direction: column; }
+    .winter__content__winner .winter__winner {
+      width: 50vw;
+      height: 33.33%;
+      margin: 2vh 23vw;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: row; }
+      .winter__content__winner .winter__winner__1 .winner-1-image-holder {
+        height: 100%;
+        width: 33.33%;
+        border-right: 2px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .winter__content__winner .winter__winner__1 .winner-1-image-holder .winner-1-image {
+          height: 20vh;
+          width: 20vh;
+          background: url("./img/winner-1.jpg") top/cover;
+          border-radius: 50%; }
+      .winter__content__winner .winter__winner__1 .winner-1-name {
+        border-right: 2px solid rgba(255, 255, 255, 0.15);
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .winter__content__winner .winter__winner__1 .winner-1-star {
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .winter__content__winner .winter__winner__1 .winner-1-name {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+        font-family: 'Satisfy', cursive;
+        font-size: 5vh; }
+      .winter__content__winner .winter__winner__1 .winner-1-star {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+        font-family: 'Satisfy', cursive;
+        font-size: 5vh; }
+      .winter__content__winner .winter__winner__2 .winner-2-image-holder {
+        height: 100%;
+        width: 33.33%;
+        border-right: 2px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .winter__content__winner .winter__winner__2 .winner-2-image-holder .winner-2-image {
+          height: 20vh;
+          width: 20vh;
+          background: url("./img/winner-2.jpg") top/cover;
+          border-radius: 50%; }
+      .winter__content__winner .winter__winner__2 .winner-2-name {
+        border-right: 2px solid rgba(255, 255, 255, 0.15);
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .winter__content__winner .winter__winner__2 .winner-2-star {
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .winter__content__winner .winter__winner__2 .winner-2-name {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+        font-family: 'Satisfy', cursive;
+        font-size: 5vh; }
+      .winter__content__winner .winter__winner__2 .winner-2-star {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+        font-family: 'Satisfy', cursive;
+        font-size: 5vh; }
+      .winter__content__winner .winter__winner__3 .winner-3-image-holder {
+        height: 100%;
+        width: 33.33%;
+        border-right: 2px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .winter__content__winner .winter__winner__3 .winner-3-image-holder .winner-3-image {
+          height: 20vh;
+          width: 20vh;
+          background: url("./img/winner-3.jpg") top/cover;
+          border-radius: 50%; }
+      .winter__content__winner .winter__winner__3 .winner-3-name {
+        border-right: 2px solid rgba(255, 255, 255, 0.15);
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .winter__content__winner .winter__winner__3 .winner-3-star {
+        height: 100%;
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .winter__content__winner .winter__winner__3 .winner-3-name {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+        font-family: 'Satisfy', cursive;
+        font-size: 5vh; }
+      .winter__content__winner .winter__winner__3 .winner-3-star {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: wheat;
+        font-family: 'Satisfy', cursive;
+        font-size: 5vh; }
+
+.winter-heading {
+  font-size: 5vh;
+  font-family: 'Satisfy', cursive;
+  text-transform: capitalize;
+  font-weight: 700; }
+
+@media only screen and (max-width: 768px) {
+  .winter-heading {
+    font-size: 3vh; }
+  .winter__content__winner {
+    padding: 2vh 2vw; }
+    .winter__content__winner .winter__winner {
+      height: 25%; }
+      .winter__content__winner .winter__winner__1 {
+        width: 60vw; }
+        .winter__content__winner .winter__winner__1 .winner-1-name {
+          font-size: 2vh; }
+        .winter__content__winner .winter__winner__1 .winner-1-star {
+          font-size: 2vh; }
+        .winter__content__winner .winter__winner__1 .winner-1-image-holder .winner-1-image {
+          height: 10vh;
+          width: 10vh; }
+      .winter__content__winner .winter__winner__2 {
+        width: 60vw; }
+        .winter__content__winner .winter__winner__2 .winner-2-name {
+          font-size: 2vh; }
+        .winter__content__winner .winter__winner__2 .winner-2-star {
+          font-size: 2vh; }
+        .winter__content__winner .winter__winner__2 .winner-2-image-holder .winner-2-image {
+          height: 10vh;
+          width: 10vh; }
+      .winter__content__winner .winter__winner__3 {
+        width: 60vw; }
+        .winter__content__winner .winter__winner__3 .winner-3-name {
+          font-size: 2vh; }
+        .winter__content__winner .winter__winner__3 .winner-3-star {
+          font-size: 2vh; }
+        .winter__content__winner .winter__winner__3 .winner-3-image-holder .winner-3-image {
+          height: 10vh;
+          width: 10vh; } }
+
+.shopping {
+  display: flex;
+  flex-direction: row;
+  height: auto; }
+  .shopping__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12%;
+    padding-left: 8%;
+    flex-direction: column;
+    width: 50%; }
+    .shopping__text__heading-1 {
+      font-family: 'Berkshire Swash', cursive;
+      font-size: 12vh;
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15); }
+    .shopping__text__heading-2 {
+      margin-top: 4vh;
+      font-family: 'Satisfy', cursive;
+      font-size: 6vh;
+      width: 100%;
+      text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15); }
+  .shopping .checkout-holder {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 5vh; }
+    .shopping .checkout-holder .checkout {
+      font-family: 'Dancing Script', cursive;
+      color: white;
+      background-color: black;
+      text-decoration: none;
+      font-size: 4vh;
+      padding: 3%;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+      transition: all 0.3s; }
+      .shopping .checkout-holder .checkout:hover {
+        transform: translateX(1rem); }
+  .shopping__image {
+    width: 50%;
+    height: auto;
+    padding: 12vh 1vw;
+    position: relative;
+    display: flex;
+    flex-direction: row; }
+    .shopping__image__1 {
+      height: 80vh;
+      width: 23vw;
+      background-color: black;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+      background: url("./img/summer-3.jpg") top/cover;
+      z-index: 3;
+      transform: perspective(30vw) rotateY(-25deg); }
+    .shopping__image__2 {
+      height: 80vh;
+      width: 23vw;
+      background-color: black;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+      background: url("./img/summer-2.jpg") top/cover;
+      z-index: 2;
+      transform: translateX(-20%) perspective(30vw) rotateY(-25deg); }
+    .shopping__image__3 {
+      height: 80vh;
+      width: 23vw;
+      z-index: 1;
+      background-color: black;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+      background: url("./img/summer-1.jpg") top/cover;
+      transform: translateX(-40%) perspective(30vw) rotateY(-25deg); }
+    .shopping__image__4 {
+      height: 80vh;
+      width: 23vw;
+      z-index: 0;
+      background-color: black;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+      background: url("./img/summer-4.jpg") top/cover;
+      transform: translateX(-60%) perspective(30vw) rotateY(-25deg); }
+
+@media only screen and (max-width: 768px) {
+  .shopping {
+    flex-direction: column-reverse;
+    padding-bottom: auto; }
+    .shopping__text {
+      width: 100%;
+      padding-top: 1vh; }
+      .shopping__text__heading-1 {
+        width: 100%;
+        font-size: 6vh;
+        align-items: center;
+        justify-content: center; }
+      .shopping__text__heading-2 {
+        display: flex;
+        width: 100%;
+        font-size: 3vh;
+        align-items: center;
+        justify-content: center; }
+      .shopping__text .checkout-holder {
+        align-items: center;
+        justify-content: center; }
+        .shopping__text .checkout-holder .checkout {
+          font-size: 2vh; }
+    .shopping__image {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 10vh 4vw; }
+      .shopping__image__1 {
+        height: 60vh;
+        transform: perspective(20vw) rotateY(-15deg); }
+      .shopping__image__2 {
+        height: 60vh;
+        transform: translateX(-10%) perspective(20vw) rotateY(-15deg); }
+      .shopping__image__3 {
+        height: 60vh;
+        transform: translateX(-15%) perspective(20vw) rotateY(-15deg); }
+      .shopping__image__4 {
+        height: 60vh;
+        transform: translateX(-20%) perspective(20vw) rotateY(-15deg); } }
+
+.footer {
+  display: flex;
+  height: auto;
+  background-color: black;
+  flex-direction: column; }
+  .footer .footer__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 3vh; }
+    .footer .footer__heading__text {
+      font-family: 'Berkshire Swash', cursive;
+      color: whitesmoke;
+      font-size: 4vh; }
+  .footer .footer__remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 1vh; }
+    .footer .footer__remaining__text {
+      font-family: Arial, Helvetica, sans-serif;
+      color: whitesmoke;
+      font-size: 0.8vw;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase; }
+
+.link-text {
+  color: whitesmoke;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+  letter-spacing: 0;
+  transition: all 0.3s; }
+  .link-text:hover {
+    cursor: pointer; }
+
+.divider {
+  background: linear-gradient(90deg, #4a4506 0%, #8a7717 21%, #544931 77%);
+  display: block;
+  height: 0.6vh; }
+
+.general__purpose__button {
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 500;
+  font-size: large;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  transition: all 0.5s;
+  border-radius: 15px; }
+  .general__purpose__button:hover {
+    border-radius: 30px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transform: scale(1.05) translateY(-1rem); }
+
+.anchor__holder {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.general__purpose__anchor {
+  color: #dab8b8;
+  font-family: 'Berkshire Swash', cursive;
+  margin: 1rem;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+  font-size: medium;
+  margin-bottom: 2rem; }
+  .general__purpose__anchor:hover {
+    cursor: pointer;
+    color: #aaaace; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
